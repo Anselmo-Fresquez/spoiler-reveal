@@ -4,17 +4,32 @@ h1 {
   padding: 2rem;
 }
 
-li {
+.shine {
+  box-shadow: 1px 1px 8px 8px rgba(255,255,255,.7);
+  border-radius: 100px;
+  padding: 0px;
+  margin: 0px;
+  width: 95%;
+  height: 3px;
+  display: inline-block;
+  background-color: rgba(255,255,255,.7);
+}
+
+.button {
+  text-align: center;
+  display: block;
   font-family: sans-serif;
   font-size: 2rem;
   list-style-type: none;
   color: white;
-  padding: 2rem;
-  margin: 2rem;
+  margin-bottom: 20px;
+  padding: 15px 10px 10px; 10px;
   background-color: rgb(6, 119, 228);
-  border-radius: 1rem;
+  border-radius: 2rem;
   cursor: pointer;
-  
+  box-shadow: inset 0px -5px 10px rgba(255,255,255, 0.5),
+              inset 0px 2rem 10px rgb(0, 78, 153);
+
   /* Pretty Complex Shadow Boxing
   /*box-shadow: 0px 0px 5px -0px rgba(0,0,0,1),              /* Light drop shadow */
   /*            inset 0px 0px 5px rgba(0,0,0,1),             /* Normal Inner Shadow */
@@ -23,12 +38,12 @@ li {
   /*             inset 0px 30px 80px blue,                    /* Inner Shadow */
   /*             inset 0px -1px 10px 5px rgba(255,255,255,.4);    /* Inner border glow */
   
-  box-shadow: inset 0px 50px 0px 0px rgba(255, 255, 255, 0.50); /* Glare */ 
-  
-  
+  /*box-shadow: inset 0px 25px 50px 0px rgba(6, 119, 228, 0.5),
+              inset 0px 50px 5px 0px rgba(255, 255, 255, 0.70); /* Glare */
 }
 
-li:hover {
-  background: linear-gradient(lightskyblue, dodgerblue);
-  box-shadow: inset 0px 45px 3px rgba(255, 255, 255, 0.5); /* Glare */ 
+.button:hover {
+  background-color: rgb(25, 142, 255);
+   box-shadow: inset 0px -5px 10px rgba(255,255,255, 0.8),
+              inset 0px 2rem 10px rgb(0, 98, 173);
 }
